@@ -1,6 +1,6 @@
-# ==========================
-# Visual Studio (archivos de usuario y caché)
-# ==========================
+###################################
+# Visual Studio / IDE
+###################################
 **/.vs/
 **/*.suo
 **/*.user
@@ -8,72 +8,113 @@
 **/*.sln.docstates
 **/*.VC.db
 **/*.VC.opendb
+**/*.ipch
 
-# ==========================
+###################################
+# Archivos de proyecto auxiliares (NO versionar)
+###################################
+**/*.vcxproj.user
+**/*.vcxproj.filters
+
+###################################
 # Directorios de compilación
-# ==========================
+###################################
 **/[Bb]in/
 **/[Oo]bj/
-**/Debug/
-**/Release/
+**/Debug*/
+**/Release*/
 **/x64/
 **/x86/
 **/[Aa][Rr][Mm]/
 **/ipch/
-**/*.tlog
-**/*.lastbuildstate
-
-# ==========================
-# Binarios y librerías compiladas
-# ==========================
-**/*.exe
-**/*.dll
-**/*.lib
-**/*.pdb
-**/*.idb
-**/*.iobj
-**/*.ipch
-**/*.ilk
-**/*.exp
-
-# ==========================
-# Precompiled headers
-# ==========================
-**/*.pch
-
-# ==========================
-# CMake (si lo usas en VS)
-# ==========================
+**/build/
 **/CMakeFiles/
 **/CMakeCache.txt
 **/cmake_install.cmake
 **/Makefile
 
-# ==========================
-# Paquetes NuGet
-# ==========================
+###################################
+# Archivos compilados
+###################################
+**/*.exe
+**/*.dll
+**/*.lib
+**/*.pdb
+**/*.exp
+**/*.idb
+**/*.ilk
+**/*.iobj
+
+###################################
+# Precompiled headers
+###################################
+**/*.pch
+**/*.gch
+
+###################################
+# Paquetes y dependencias
+###################################
 **/packages/
 **/*.nupkg
 **/project.lock.json
 **/project.fragment.lock.json
 **/artifacts/
+**/nuget.exe
 
-# ==========================
-# Otros IDEs / Editores
-# ==========================
-**/.vscode/
-**/*.code-workspace
+###################################
+# Logs y diagnósticos
+###################################
+**/*.log
+**/*.tlog
+**/*.lastbuildstate
+**/*.dmp
 
-# ==========================
+###################################
 # Archivos temporales / backups
-# ==========================
+###################################
 **/*.tmp
 **/*.bak
 **/*.swp
 **/*~
 **/*.cache
+**/*.zip
 
-# ==========================
-# Crash dumps
-# ==========================
-**/*.dmp
+###################################
+# Otros IDEs / editores
+###################################
+**/.vscode/
+**/*.code-workspace
+**/.idea/
+**/*.iml
+
+###################################
+# Archivos de sistema (Windows / macOS)
+###################################
+**/Thumbs.db
+**/ehthumbs.db
+**/Desktop.ini
+**/$RECYCLE.BIN/
+**/.DS_Store
+**/Icon?
+**/._*
+
+###################################
+# Archivos de pruebas / cobertura
+###################################
+**/coverage/
+**/TestResults/
+**/*.gcda
+**/*.gcno
+**/*.gcov
+**/*.coverage
+**/*.cov
+
+###################################
+# Archivos de configuración sensible
+###################################
+**/.env
+**/*.key
+**/*.pem
+**/*.crt
+**/*.pfx
+**/*.keystore
